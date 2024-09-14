@@ -6,8 +6,8 @@ import joblib
 # Function to load the FRP-confined models and scaler
 def load_model_scaler_frp_confined():
     scaler = joblib.load("scaler_Fcc_Scc.pkl")
-    model_fcc = joblib.load("best_model_Fcc.pkl")
-    model_scc = joblib.load("best_model_Scc.pkl")
+    model_fcc = joblib.load("best_model_fcc.pkl")
+    model_scc = joblib.load("best_model_fcc.pkl")
     return model_fcc, model_scc, scaler
 
 # Function to predict using CSV file for FRP-confined RAC
